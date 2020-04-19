@@ -34,7 +34,7 @@ p {
   box-sizing: border-box;
   max-width: 900px;
 }
-.page-header {
+.navigation {
   display: block;
   margin: 0;
   padding: 75px 0 75px 0;
@@ -69,14 +69,19 @@ p {
 }
 .page-content-list {
   font-size: 0;
+  padding-bottom: 56px;
 }
 .page-content-list-item {
   display: inline-block;
   width: 420px;
   margin-right: 60px;
+  margin-bottom: 130px;
 }
 .page-content-list-item:nth-child(2n) {
   margin-right: 0;
+}
+.page-content-list-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 .item-photo {
   width: 100%;
@@ -104,9 +109,8 @@ p {
   line-height: 26px;
   font-weight: 400;
   color: #626262;
-  margin-bottom: 130px;
 }
-.Page-content-button {
+.page-content-button {
   font-size: 20px;
   line-height: 24px;
   color: #626262;
